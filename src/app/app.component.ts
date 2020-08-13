@@ -8,6 +8,7 @@ import { Contact } from './contact/contact';
 })
 export class AppComponent {
   title = 'Week2';
+  
   contacts: Contact[] = [
     new Contact("Bob", "Mx", "1 Queen Street, Melbs", "https://placehold.it/200x200"),
     new Contact("Frank", "Mr", "2 Queen Street, Melbs", "https://placehold.it/200x200"),

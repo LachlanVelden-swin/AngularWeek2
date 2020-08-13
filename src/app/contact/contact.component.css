@@ -5,3 +5,15 @@
     padding: 10px;    
     margin: 5px;
 }
+
+.title-mx {
+    color: orange;
+}
+
+.title-mr {
+    color: blue;
+}
+
+.title-ms {
+    color: pink;
+}
