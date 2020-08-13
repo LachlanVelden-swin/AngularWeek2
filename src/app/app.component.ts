@@ -7,12 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Week2';
-  total: number = 0;
+  contacts: string[] = [
+    "Bob",
+    "Frank",
+  ];
 
 
-  myName = "lachlan van der Velden's Ums";
+  showContacts: boolean = true;
 
-  onCounted(value: number) {
-    this.total += value;
+  onToggleContacts() {
+    // if(this.showContacts == true){
+    //   this.showContacts = false;
+    // }else {
+    //   this.showContacts = true;
+    // }
+    this.showContacts = !this.showContacts;
   }
+  
 }

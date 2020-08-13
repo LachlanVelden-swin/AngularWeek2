@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { CounterComponent } from './counter/counter.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CounterComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule
