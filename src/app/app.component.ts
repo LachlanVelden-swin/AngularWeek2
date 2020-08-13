@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Contact } from './contact/contact';
 
 @Component({
   selector: 'app-root',
@@ -7,21 +8,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Week2';
-  contacts: string[] = [
-    "Bob",
-    "Frank",
+  contacts: Contact[] = [
+    new Contact("Bob", "Mx", "1 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("Frank", "Mr", "2 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("Jess", "Ms", "3 Queen Street, Melbs", "https://placehold.it/200x200"),
+    new Contact("George", "Mx", "4 Queen Street, Melbs", "https://placehold.it/200x200"),
   ];
 
 
-  showContacts: boolean = true;
+showContacts: boolean = true;
 
-  onToggleContacts() {
-    // if(this.showContacts == true){
-    //   this.showContacts = false;
-    // }else {
-    //   this.showContacts = true;
-    // }
-    this.showContacts = !this.showContacts;
-  }
+onToggleContacts() {
+  // if(this.showContacts == true){
+  //   this.showContacts = false;
+  // }else {
+  //   this.showContacts = true;
+  // }
+  this.showContacts = !this.showContacts;
+}
   
 }

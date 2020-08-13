@@ -3,9 +3,5 @@
 <button (click)="onToggleContacts()">Toggle Contacts</button>
 
 <div *ngIf="showContacts === true">
-    <ul>
-        <li *ngFor="let contact of contacts">
-            <app-contact name="{{contact}}"></app-contact>
-        </li>
-    </ul>
+    <app-contact *ngFor="let contact of contacts" [contact]="contact"></app-contact>
 </div>
